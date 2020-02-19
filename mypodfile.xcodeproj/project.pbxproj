@@ -15,6 +15,7 @@
 		8B902ACD23FD21F0009B07BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B902ACB23FD21F0009B07BE /* Main.storyboard */; };
 		8B902ACF23FD2201009B07BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B902ACE23FD2201009B07BE /* Assets.xcassets */; };
 		8B902AD223FD2201009B07BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B902AD023FD2201009B07BE /* LaunchScreen.storyboard */; };
+		8B902AE623FD3DA6009B07BE /* mypodfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B902AE523FD3DA6009B07BE /* mypodfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		8B902ACE23FD2201009B07BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B902AD123FD2201009B07BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B902AD323FD2201009B07BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B902AE523FD3DA6009B07BE /* mypodfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mypodfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				8B7DD00A23FD1786001A07C4 /* mypodfile.h */,
 				8B7DD00B23FD1786001A07C4 /* Info.plist */,
+				8B902AE523FD3DA6009B07BE /* mypodfile.swift */,
 			);
 			path = mypodfile;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					8B7DD00623FD1786001A07C4 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					8B7DD00F23FD1786001A07C4 = {
 						CreatedOnToolsVersion = 10.2;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B902AE623FD3DA6009B07BE /* mypodfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		8B7DD01C23FD1786001A07C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -451,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = karthi.App.MapTouch.mypodfile;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +466,7 @@
 		8B7DD01D23FD1786001A07C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -483,6 +491,7 @@
 		8B7DD01F23FD1786001A07C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = mypodfileTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		8B7DD02023FD1786001A07C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = mypodfileTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
